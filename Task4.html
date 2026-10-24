@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coffee</title>
+    <style>
+       
+        body {
+            margin: 0;
+            padding: 40px 0;
+            background-color: #2b2d42;
+            color: #2b2d42;
+        }
+
+        
+        .container {
+            width: 780px;
+            margin: 0 auto;
+            background-color: #f8f9fa;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+        }
+
+       
+        header {
+            background-color: #ffb703;
+            padding: 20px 25px;
+            border-radius: 6px;
+            text-align: right;
+            margin-bottom: 24px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #023047;
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin: 6px 0 0 0;
+            color: #219ebc;
+            font-size: 15px;
+            font-style: italic;
+            font-weight: 600;
+        }
+
+       
+        .main-content {
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+        }
+
+
+        .sidebar {
+            width: 200px;
+            border: 3px solid #023047;
+            border-radius: 6px;
+            padding: 16px;
+            background-color: #219ebc; 
+            box-sizing: border-box;
+            flex-shrink: 0;
+        }
+
+        .sidebar h2 {
+            margin-top: 0;
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #8ecae6;
+            padding-bottom: 6px;
+        }
+
+        .sidebar ul {
+            padding-left: 18px;
+            margin-bottom: 0;
+            list-style-type: square;
+        }
+
+        .sidebar li {
+            margin-bottom: 8px;
+            color: #e0f2fe;
+            font-size: 14px;
+        }
+
+        .sidebar li.active {
+            color: #ffb703;
+            font-weight: bold;
+        }
+
+   
+        .posts {
+            flex-grow: 1;
+        }
+
+        .post {
+            border: 2px solid #8ecae6;
+            border-radius: 6px;
+            padding: 18px;
+            margin-bottom: 24px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+
+        .post-title {
+            color: #023047;
+            font-size: 21px;
+            margin: 0 0 12px 0;
+            font-weight: 600;
+        }
+
+        .date {
+            color: #fb8500;
+            border-bottom: 2px dashed #fb8500;
+            padding-bottom: 1px;
+        }
+
+        .post-body {
+            display: flex;
+            gap: 16px;
+        }
+
+        .post-text {
+            flex: 1;
+            line-height: 1.5;
+            font-size: 14px;
+            color: #334155;
+        }
+
+        .image-placeholder {
+            width: 160px;
+            height: 150px;
+            border: 2px dashed #cbd5e1;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f1f5f9;
+            color: #64748b;
+            font-size: 12px;
+            text-align: center;
+            padding: 8px;
+            box-sizing: border-box;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        
+        <header>
+            <h1>KAAFI Coffee Shop</h1>
+                   </header>
+
+            <div class="main-content">
+            <aside class="sidebar">
+                <h2>Favorite Spots</h2>
+                <ul>
+                    <li class="active">Kaafi</li>
+                    <li>House</li>
+                    <li>Costa</li>
+                    <li>CBTL</li>
+                </ul>
+            </aside>
+
+            <main class="posts">
+                
+                
+
+                <article class="post">
+                    <h2 class="post-title">Kaafi</h2>
+                    <div class="post-body">
+                        <div class="post-text">
+                            Check out KAFI, a popular contemporary coffee shop and patisserie chain in Lahore with multiple branches offering specialty drinks, protein bowls, and deli items                        </div>
+                        
+                        <img src="image1.jpg" alt="Kyoto Coffee" width="160">
+                                            </div>
+                </article>
+
+                     <article class="post">
+                    <h2 class="post-title"> Deserts</h2>
+                    <div class="post-body">
+                        <div class="post-text">
+                            Tiramisu: Classic Italian style featuring rich coffee-soaked layers and a smooth, creamy finish.
+Mocha Cake: Soft mocha sponge layered with rich coffee and chocolate flavor in every bite.
+ Dark Chocolate Tart: A crisp, buttery pastry crust filled with rich dark chocolate.                        </div>
+                        
+                       <img src="image2.jpg" alt="Paris Pastry" width="160"> 
+                                          </div>
+                </article>
+
+            </main>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
